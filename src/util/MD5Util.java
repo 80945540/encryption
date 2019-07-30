@@ -8,7 +8,7 @@ import java.util.Base64;
 public class MD5Util {
     public static void main(String[] args) {
         //字符串编码
-        System.out.println("编码结果:"+encryptMD5("hello word"));
+        System.out.println("编码结果:"+encryptMD5("hello world"));
     }
 
     /**

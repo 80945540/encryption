@@ -6,7 +6,7 @@ public class SecurityUtil {
 
     public static void main(String[] args) {
         //字符串编码
-        System.out.println("编码结果:"+encrypt("hello word"));
+        System.out.println("编码结果:"+encrypt("hello world"));
         //字符串解码
         System.out.println("编码结果:"+dencrypt("KSFaWC4VMl9GXA=="));
     }

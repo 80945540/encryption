@@ -21,14 +21,14 @@ public class RSAUtil {
     public static void main(String[] args) {
 //        genKeyPair();
         //字符串编码
-        System.out.println("编码结果:" + encrypt("hello word", PUBLIC_KEY));
+        System.out.println("编码结果:" + encrypt("hello world", PUBLIC_KEY));
 
         //字符串解码
         System.out.println("编码结果:" + decrypt("NEo+98UAvp0q69M1mxorD/zrL4QjhBGAFd2Wj2nGcsF8Txb9r8VnUvFqGUM7ZNwXZdcnzW/SZqbGc8rHT0mmtPGWMlzJV8jMAWUgOh9jozyablwWU8Uj4BItiderZSQTrD+3E+ZL5TkkQKwmNCmdaABmozpkUz4B893m3GzhpjQ=",PRIVATE_KEY));
 
         long startTime=System.currentTimeMillis();
         for (int i = 0; i <10000 ; i++) {
-            encrypt("hello word", PUBLIC_KEY);
+            encrypt("hello world", PUBLIC_KEY);
         }
         System.out.println("RSA加密10000次耗时:" + (System.currentTimeMillis()-startTime));
 

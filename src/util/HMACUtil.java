@@ -11,10 +11,10 @@ import java.security.NoSuchAlgorithmException;
 public class HMACUtil {
     public static void main(String[] args) {
         //字符串编码
-        System.out.println("编码结果:"+encryptMD5("hello word"));
+        System.out.println("编码结果:"+encryptMD5("hello world"));
         long startTime=System.currentTimeMillis();
         for (int i = 0; i <10000 ; i++) {
-            encryptMD5("hello word");
+            encryptMD5("hello world");
         }
         System.out.println("AES加密10000次耗时:" + (System.currentTimeMillis()-startTime));
     }

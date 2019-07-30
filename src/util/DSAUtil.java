@@ -22,21 +22,21 @@ public class DSAUtil {
         //随机生成成对密钥
         genKeyPair();
 
-        String sign=sign("hello word", PRIVATE_KEY);
+        String sign=sign("hello world", PRIVATE_KEY);
 
         System.out.println("数字签名:" + sign);
         //字符串解码
-        System.out.println("数字签名校验:" + verify("hello word",sign,PUBLIC_KEY));
+        System.out.println("数字签名校验:" + verify("hello world",sign,PUBLIC_KEY));
 
         long startTime=System.currentTimeMillis();
         for (int i = 0; i <10000 ; i++) {
-            sign("hello word", PRIVATE_KEY);
+            sign("hello world", PRIVATE_KEY);
         }
         System.out.println("DSA加密10000次耗时:" + (System.currentTimeMillis()-startTime));
 
         long startTime1=System.currentTimeMillis();
         for (int i = 0; i <10000 ; i++) {
-            verify("hello word","MC4CFQCMUa+mnODkTClp8moBTvAmrAr3dAIVAIxbfwXF2vFOCua0I17140cNowSp",PUBLIC_KEY);
+            verify("hello world","MC4CFQCMUa+mnODkTClp8moBTvAmrAr3dAIVAIxbfwXF2vFOCua0I17140cNowSp",PUBLIC_KEY);
         }
         System.out.println("DSA解密10000次耗时:" + (System.currentTimeMillis()-startTime1));
 

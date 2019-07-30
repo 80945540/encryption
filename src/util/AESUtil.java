@@ -14,13 +14,13 @@ public class AESUtil {
 
     public static void main(String[] args) {
         //字符串编码
-        System.out.println("编码结果:" + encrypt("hello word"));
+        System.out.println("编码结果:" + encrypt("hello world"));
         //字符串解码
         System.out.println("编码结果:" + decrypt("UePyU9tACUkzOEHYFMUsNg=="));
 
         long startTime=System.currentTimeMillis();
         for (int i = 0; i <10000 ; i++) {
-            encrypt("hello word");
+            encrypt("hello world");
         }
         System.out.println("AES加密10000次耗时:" + (System.currentTimeMillis()-startTime));
 
